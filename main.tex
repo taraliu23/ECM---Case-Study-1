@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\setlength{\parskip}{1em}
+\setlength\parindent{0pt}
+\usepackage[margin=1.5in, top=1in, bottom=1in]{geometry}
+\newcommand{\comment}[1]{}
+\usepackage{graphics}
+
+\usepackage{minted}
+
+
+\usepackage[many]{tcolorbox}    	
+
+\newtcolorbox{boxB}{
+    boxrule = 1.5pt,
+    rounded corners,
+    arc = 5pt   % corners roundness
+}
+
+\date{}
+\begin{document}
+\vspace{-5cm}
+
+
+\begin{center}
+\textbf{\Large CS 6239}
+
+\textbf{\Large Enterprise Cyber Security Management}
+
+\textbf{\\ \Large Case Study 1}
+\end{center}
+
+\section{Company}
+
+This case study uses Lyft as an example to analyze threat objectives.
+
+Lyft, Inc. is a Russell 1000 Index and Nasdaq Index public company providing MaaS(Mobility as a Service) in United States.
+
+\begin{boxB}
+    inherent likelihood (remote, unlikely, possible, probable, or certain) and inherent impact (very low, low, medium, high, or severe)
+\end{boxB}
+
+\section{Threat Objective: DT}
+\textbf{Data Disclosure}
+
+PII/PHI Personal Data
+Customer/Transactional Data
+Intellectual Property
+MNPI (Insider Trading)
+
+
+\section{Threat Objective: EX}
+
+\textbf{Extortion}
+Ransomware, DDoS for Bitcoin, Data Blackmail
+
+\section{Threat Objective: SA}
+\textbf{Sabotage}
+
+
+
+
+
+\section{Threat Objective: FF}
+\textbf{Fraud}
+
+
+Account takeover, ACH fraud, payment data interception, 
+crypto wallet theft or transaction substitution
+
+
+
+\section{Threat Objective: RH}
+
+\textbf{Resourc Hijacking}
+
+Commoditized malware,
+cryptojacking, 
+botnet enrollment
+
+\section{Threat Objective: WH}
+\textbf{Watering Hole}
+
+Compromise in order to target participants
+
+
+
+\bibliographystyle{plain} % We choose the "plain" reference style
+\bibliography{ref}
+
+\end{document}
