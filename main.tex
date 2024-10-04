@@ -36,10 +36,33 @@
 
 This case study uses Lyft as an example to analyze threat objectives.
 
-Lyft, Inc. is a Russell 1000 Index and Nasdaq Index public company providing MaaS(Mobility as a Service) in United States.
+Lyft, Inc., founded in 2012  is a Russell 1000 Index and Nasdaq Index public company providing on-demand MaaS(Mobility as a Service) to 600 million rides a year in United States and Canada.
+
+It delivers transportation solutions to business, customers, and governments.
 
 \begin{boxB}
     inherent likelihood (remote, unlikely, possible, probable, or certain) and inherent impact (very low, low, medium, high, or severe)
+\end{boxB}
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+   & \textbf{inherent likelihood} & \textbf{inherent impact} \\ \hline
+DT & possible            & severe          \\ \hline
+EX & probable            & high           \\ \hline
+SA & unlikely            & high            \\ \hline
+FF & probable            & high            \\ \hline
+RH & unlikely            & low          \\ \hline
+WH & unlikely            & high          \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{boxB}
+    likelihood: Assessed via threat intelligence from security leadership or vendors. Is this going on out there (beyond the company)?
+
+    impact: Assessed by business leadership and the Board. If this happened here, how bad would it be?
+
+
 \end{boxB}
 
 \section{Threat Objective: DT}
@@ -51,14 +74,59 @@ Intellectual Property
 MNPI (Insider Trading)
 
 
+\begin{boxB}
+    \textbf{Inherent likelihood: Possible}\\
+    \textbf{Inherent likelihood: Severe}\\
+    
+    \textbf{Reason: }
+    \\
+    
+    Lyft provides high volumes of rides for consumers, and the users' sensitive personal and financial data are the mission critical applications and valuable intellectual property. For example, users' ride history, bank account, payment transaction, home address could be revealed by data breaching or by insider trading.
+\\
+    Once data disclosure happened, the inherent impact would be severe. As a result of data disclosure, costumer tend to lose trust to Lyft, and there could be legal issues and stock price decrease. All of the consequences would harm Lyft's business and reputation.
+\\
+    Although Lyft uses procedures for employees to use VPN and multi-factor authentication (MFA) to access internal application\cite{lyft1}, due to the high profit and volume of illegal data disclosure by cyber-criminals and internal threats, the inherent likelihood would be possible.
+
+
+\end{boxB}
+
+
 \section{Threat Objective: EX}
 
 \textbf{Extortion}
 Ransomware, DDoS for Bitcoin, Data Blackmail
 
+
+
+
+\begin{boxb}
+    \textbf{Inherent likelihood: Probable}\\
+    \textbf{Inherent likelihood: High}\\
+    \textbf{Reason: }
+
+The inherent likelihood is probable. In 2022, it was discovered that malicious packages targeting big tech company including Lyft in npm.
+
+When extortion happens, business operations of Lyft would be interrupted or heavily interfered. Especially the data blackmail that threat Lyft's production database or ransomware that disturbs Lyft's on-demand travel planning, which would stop business or even internal platform. If Lyft choose not to pay for ransomware, the pause of business would elongate. Else the comprise price would be high, and negatively influence the revenue.
+
+    \\
+\end{boxb}
+
+
 \section{Threat Objective: SA}
 \textbf{Sabotage}
 
+
+
+\begin{boxB}
+    \textbf{Inherent likelihood: Possible}\\
+    \textbf{Inherent likelihood: High}\\
+    \textbf{Reason: }
+
+Lyft's physical and cyber infrastructure are possible to be threated. Since Lyft is a big tech company, the security of physical company facilities is solid, the chance for criminals to physically sabotage the equipment, for example, data center, is unlikely. However, the virtual infrastructure had the history to be hacked. Lyft's industry competitor, Uber Technology Inc. experienced a computer network sabtoge in 2022\cite{Conger_Roose_2022}. Therefore, inherent likhood of sabotage is possible.
+
+When sabotage happened, the impact would be high. Physical and cyber infrastructure are critical to business operation, and disruption would lead to financial losses and extra man hours for fixation.
+
+\end{boxB}
 
 
 
@@ -71,14 +139,34 @@ Account takeover, ACH fraud, payment data interception,
 crypto wallet theft or transaction substitution
 
 
+\begin{boxB}
+
+
+    \textbf{Inherent likelihood: Possible}\\
+    \textbf{Inherent likelihood: High}\\
+
+    Reason:
+
+    Lyft 
+
+\end{boxB}
 
 \section{Threat Objective: RH}
 
-\textbf{Resourc Hijacking}
+\textbf{Resource Hijacking}
+
+
 
 Commoditized malware,
 cryptojacking, 
 botnet enrollment
+
+
+\begin{boxB}
+    Reason:
+
+\end{boxB}
+
 
 \section{Threat Objective: WH}
 \textbf{Watering Hole}
@@ -86,6 +174,20 @@ botnet enrollment
 Compromise in order to target participants
 
 
+\begin{boxB}
+    Reason:
+
+\end{boxB}
+
+
+\section{Discussion}
+Conclude your paper with a discussion of what the top priorities in the company's cyber security Strategy should emphasize given the Threat Objective ratings you listed. You can emphasize specific technologies or controls, talent that should be recruited, or threat intelligence/news that should be more closely monitored in this section. Any of those areas can receive full credit to not disadvantage students with a less hands-on technical background.
+
+
+
+\section{Hypothetical Business}
+
+For up to 5 (/100) points extra credit, list a hypothetical business change your target company could undergo and the implications on a threat objective. Examples might include potential acquisitions the company could make, new lines of business it could pursue, or changes to the geopolitical or regulatory environments in which it operates.
 
 \bibliographystyle{plain} % We choose the "plain" reference style
 \bibliography{ref}
